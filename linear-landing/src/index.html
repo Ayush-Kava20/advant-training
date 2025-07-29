@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear-clone</title>
-    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#08090A] text-white font-sans min-h-screen">
+
     <header class="bg-[#08090A] w-full border-b border-[#696C73] h-16 sticky top-0 z-30">
         <nav class="flex justify-center h-full">
             <div class="relative px-14 h-full flex items-center justify-center">
@@ -169,7 +170,7 @@
             </button>
         </div>
         <div class="w-full h-auto">
-            <img src="../public/Screenshot 2025-07-26 154445.png" alt="">
+            <img src="../public/hero-bg.png" alt="">
         </div>
     </section>
 
@@ -183,33 +184,39 @@
                 <p>From next-gen startups to established enterprises.</p>
             </div>
         </div>
-
-        <div class="cutomers grid grid-cols-3 border border-b-amber-200 p-2 gap-2 w-full mt-5 text-3xl text-white rounded">
-                <div class=" border border-white rounded flex justify-center items-center gap-3 p-2 min-h-[100px]">
+        
+            <div class="group relative">
+                <div class="btn absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 z-10 flex justify-center items-center">
+                    <button class="bg-gray-800 px-3 py-1 rounded-2xl">
+                        Meet our customers &gt;
+                    </button>
+                </div> 
+                <div class="cutomers relative grid grid-cols-3  p-2 gap-2 w-full mt-5 text-3xl text-white rounded hover:blur-xs transition cursor-pointer">
+                    <div class=" rounded flex justify-center items-center gap-3 p-2 min-h-[100px]">
                     <div class="image object-contain h-auto w-[40px]">
-                        <img src="../public/perplexity-ai-icon.webp" alt="" v>
+                        <img src="../public/perplexity-ai-icon.webp" alt="" >
                     </div>
                     <h2>Perplexity</h2>
                 </div>
-                <div class=" border border-white rounded flex justify-center items-center gap-2  p-2 h-full">
+                <div class=" rounded flex justify-center items-center gap-2  p-2 h-full">
                     <h2>Open AI</h2>
                 </div>
-                <div class=" border border-white rounded flex justify-center items-center gap-2  p-2 h-full">
+                <div class=" rounded flex justify-center items-center gap-2  p-2 h-full">
                     <h2>Monzo</h2>
                 </div>
-                <div class=" border border-white rounded flex justify-center items-center gap-2  p-2 min-h-[100px]">
+                <div class=" rounded flex justify-center items-center gap-2  p-2 min-h-[100px]">
                     <div class="image object-contain h-auto w-[40px]">
                         <img src="../public/cashapp.jpg" alt="">
                     </div>
                     <h2>Cash app</h2>
                 </div>
-                <div class=" border border-white rounded flex justify-center items-center gap-2  p-2 h-full">
+                <div class=" rounded flex justify-center items-center gap-2  p-2 h-full">
                     <div class="image object-contain h-auto w-[40px]">
                         <img src="../public/vercel.png" alt="">
                     </div>
                     <h2>Vercel</h2>
                 </div>
-                <div class=" border border-white rounded flex justify-center items-center gap-2  p-2 h-full">
+                <div class=" rounded flex justify-center items-center gap-2  p-2 h-full">
                     <div class="image object-contain h-auto w-[40px]">
                         <img src="../public/images.png" alt="">
                     </div>
@@ -219,7 +226,7 @@
         </div>
     </section>
 
-    <section class="page_sectionWhatMakesLinearDifferent max-w-[950px] h-auto mx-auto p-10 mt-20 text-white w-full">
+    <section class="page_sectionWhatMakesLinearDifferent max-w-[1100px] h-auto mx-auto p-10 mt-20 text-white w-full">
         <div class="text-content grid  grid-cols-2 w-full">
             <div>
                 <h1 class=" text-[3rem] p-3 leading-tight">Made for modern product teams</h1>
@@ -288,27 +295,618 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class=" rounded-3xl  p-3 bg-[#141516] hover:bg-[#17191c] transition cursor-pointer">
-                <div class="image object-contain">
-                    <img src="../public//card-02.png" alt="">
+        </div>
+    </section>
+
+    <!-- Section Page planning  -->
+    <section class="page_planning relative max-w-[950px] h-[100px] z-10 mx-auto p-10 mt-20 text-white border-t-2 border-[#696C73] flex flex-col">
+        <div class="text-content">
+            <div class="btn ">
+                <button class="flex items-center gap-2">
+                    <span class="bg-green-500 inline-block h-2 w-2 rounded-full px-2"></span>
+                    Project and long-term planning
+                </button>
+            </div>
+            <div class="heading">
+                <h1 class="text-white text-[4rem] font-semibold">
+                    Set the product direction
+                </h1>
+            </div>
+            <div class="paragraph max-w-[400px] text-[18px]">
+                <p class="inline">
+                    Align your team around a unified product timeline. 
+                </p>
+                <p class="inline text-[#696C73] font-semibold">
+                    Plan, manage, and track all product initiatives with Linear’s visual planning tools.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="w-full mt-10 -z-10">
+        <img src="../public/second-bg.webp" alt="Planning Image" class="w-full h-auto " />
+    </div>
+
+
+    <!-- Section Project Overview  -->
+    <section class="page_project_overview max-w-[950px] h-auto mx-auto p-10 mt-20 text-white w-full">
+        <div class="grid grid-cols-2 ">
+            <div>
+                <div class="text mt-3 h-[120px]">
+                    <h1 class="font-semibold text-2xl">
+                        Manage projects end-to-end
+                    </h1>
+                    <p class="text-[#696C73]  text-[15px] max-w-[300px] mt-2">
+                        Consolidate specs, milestones, tasks, and other documentation in one centralized location.
+                    </p>
                 </div>
-                <div class="card-text text-2xl mt-3">
+                <div class="img w-full h-auto border-t-1 border-r-1  border-b-1 p-2 py-3 border-[#151616]">
+                    <img src="../public/left-mini.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="text mt-3  h-[120px]">
+                    <h1 class="font-semibold text-2xl ">
+                        Project updates
+                    </h1>
+                    <p class="text-[#696C73]  text-[15px] max-w-[300px] mt-2">
+                        Communicate progress and project health with built-in project updates.
+                    </p>
+                </div>
+                <div class="img w-full h-auto border-t-1 border-l-1  border-b-1 p-2 border-[#151616]">
+                    <img src="../public/right-mini.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="idea mt-10 grid grid-cols-2 h-auto mb-10">
+            <div class=" py-22  ">
+                <h1 class=" font-semibold  text-xl ">
+                    Ideate and specify <br>
+                     what to build next
+                </h1>
+
+                <div class="btns mt-3">
+                    <button class="flex items-center gap-2">
+                        <span class="inline-block h-5 w-1 bg-green-500 rounded-full"></span>
+                        Colloborative documents 
+                    </button>
+                    <button class="flex items-center gap-2 mt-1 text-[#696C73] hover:text-white cursor-pointer">
+                        <span class="inline-block h-5 w-1 bg-[#232326] rounded-full "></span>
+                        Inline comments
+                    </button>
+                    <button class="flex items-center gap-2 mt-1 text-[#696C73] hover:text-white cursor-pointer">
+                        <span class="inline-block h-5 w-1 bg-[#232326] rounded-full "></span>
+                        Text-to-issue command
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src="../public/right-mini-02.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="feture grid grid-cols-4  border-t-2 border-[#696C73] py-10">
+            <div class="h-[100px]">
+                <div class="heading flex gap-1">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/initiatives-logo.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    Initiatives
+                </div>
+
+                <div class="text-content text-[#696C73] text-[15px] px-1">
+                    Coordinate strategic product efforts.
+                </div>
+            </div>
+
+            <div class="h-[100px]">
+                <div class="heading flex gap-0">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/cross-team-logo.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    Cross-team projects
+                </div>
+
+                <div class="text-content text-[#696C73] text-[15px] px-1">
+                    Collaborate across teams and departments.
+                </div>
+            </div>
+
+            <div class="h-[100px]">
+                <div class="heading flex gap-0">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/milestone-logo.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    Milestones
+                </div>
+
+                <div class="text-content text-[#696C73] text-[15px] px-1">
+                    Break projects down into concrete phases.
+                </div>
+            </div>
+
+
+            <div class="h-[100px]">
+                <div class="heading flex gap-1">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/progress-logo.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    Progress insights
+                </div>
+
+                <div class="text-content text-[#696C73] px-1">
+                    Track scope, velocity, and progress over time
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="text-[#252323]"/>
+
+    
+    <!-- Section issue tracking  -->
+    <section class="page_issue_tracking max-w-[950px] h-[200px] z-10 mx-auto p-10 mt-20 text-white">
+        <div class="text-content">
+            <div class="btn ">
+                <button class="flex items-center gap-2">
+                    <span class="bg-[#d4b144] inline-block h-2 w-2 rounded-full px-2"></span>
+                    Task tracking and sprint planning
+                </button>
+            </div>
+            <div class="heading">
+                <h1 class="text-white text-[40px] font-semibold leading-tight mb-5">
+                    Issue tracking 
+                    <br>
+                    you’ll enjoy using
+                </h1>
+            </div>
+            <div class="paragraph max-w-[400px] text-[18px]">
+                <p class="inline">
+                    Optimized for speed and efficiency.
+                </p>
+                <p class="inline text-[#696C73] font-semibold">
+                    Create tasks in seconds, discuss issues in context, and breeze through your work in views tailored to you and your team.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="third-bg w-full h-auto mt-0">
+        <img src="../public/third.webp" alt="">
+    </div>
+
+    <!-- Issue traking -->
+    <section class="page_issue_tracking max-w-[950px] h-auto mx-auto p-10 mt-20 text-white">
+        <div class="grid grid-cols-2 ">
+            <div>
+                <div class="img w-full h-auto border-t-1 border-r-1  border-b-1 p-2 py-3 border-[#151616]">
+                    <div class="text mt-3 h-[120px]">
+                        <h1 class="font-semibold text-2xl">
+                            Build momentum with Cycles
+                        </h1>
+                        <p class="text-[#696C73]  text-[15px] max-w-[300px] mt-2">
+                            Create healthy routines and focus your team on what work should happen next.
+                        </p>
+                    </div>
+                    <img src="../public/left-mini-02.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="img w-full h-auto border-t-1 border-l-1  border-b-1 p-2 border-[#151616]">
+                    <div class="text mt-3  h-[120px]">
+                        <h1 class="font-semibold text-2xl ">
+                            Manage incoming work with Triage
+                        </h1>
+                        <p class="text-[#696C73]  text-[15px] max-w-[300px] mt-2">
+                            Review and assign incoming bug reports, feature requests, and other unplanned work.
+                        </p>
+                    </div>
+                    <img src="../public/right-mini-03.png" alt="" class="mb-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-content mt-8 ">
+            <div class="heading">
+                <h1 class="text-white text-[20px] font-semibold leading-tight mb-2">
+                    Linear Insights
+                </h1>
+            </div>
+            <div class="paragraph max-w-[400px] text-[15px]">
+                <p class="inline text-[#696C73] font-semibold">
+                    Take the guesswork out of product planning with realtime analytics and reporting dashboards.
+                </p>
+            </div>
+            <div class="btn">
+                <button class="bg-[#28282c] px-3 py-1 text-[#696C73] hover:text-white transition rounded mt-5 font-medium text-[15px]">
+                    Learn more >
+                </button>
+            </div>
+        </div>
+        <img src="../public/insight.png" alt="">
+
+        
+        <div class="feture grid grid-cols-4  border-t-2 border-[#696C73] py-10">
+            <div class="h-[100px]">
+                <div class="heading flex gap-1">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/tailored-logo.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    Tailored workflows
+                </div>
+
+                <div class="text-content text-[#696C73] text-[15px] px-1">
+                    Track progress across custom issue flows for your team
+                </div>
+            </div>
+
+            <div class="h-[100px]">
+                <div class="heading flex gap-0">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/custom.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    Custom views
+                </div>
+
+                <div class="text-content text-[#696C73] text-[15px] px-1">
+                    Switch between list and board. Group issues with swimlanes.
+                </div>
+            </div>
+
+            <div class="h-[100px]">
+                <div class="heading flex gap-0">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/filter.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    Filters
+                </div>
+
+                <div class="text-content text-[#696C73] text-[15px] px-1">
+                    Refine issue lists down to what’s most relevant to you
+                </div>
+            </div>
+
+
+            <div class="h-[100px]">
+                <div class="heading flex gap-1">
+                    <div class="img text-white font-semibold h-[30px] w-auto inline overflow-hidden">
+                        <img src="../public/sla.png" alt="" class="h-full w-full object-contain">
+                    </div>
+                    SLAs
+                </div>
+
+                <div class="text-content text-[#696C73] px-1">
+                    Automatically apply deadlines to time-sensitive tasks.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Works -->
+    <section class="page_workflows max-w-[950px] h-auto mx-auto p-10 mt-20 text-white">
+        <div class="text-content">
+            <div class="btn ">
+                <button class="flex items-center gap-2">
+                    <span class="bg-[#02b8cc] inline-block h-2 w-2 rounded-full px-2"></span>
+                    Artificial intelligence
+                </button>
+            </div>
+            <div class="heading">
+                <h1 class="text-white text-[40px] font-semibold leading-tight mb-5">
+                    AI that works where you work
+                </h1>
+            </div>
+            <div class="paragraph max-w-[400px] text-[18px]">
+                <p class="inline">
+                    Linear for Agents. 
+                </p>
+                <p class="inline text-[#696C73] font-semibold">
+                    Choose from a variety of AI agents and start delegating work, from code generation to other technical tasks.
+                </p>
+            </div>
+        </div>
+
+        <img src="../public/ai-work.png" alt="">
+
+        <div class="grid grid-cols-2 ">
+                <div class="img w-full h-auto border-t-1 border-r-1  border-b-1 p-2 py-3 border-[#151616]">
+                    <div class="text mt-3 h-[120px] p-4 mb-3">
+                        <h1 class="font-semibold text-2xl">
+                            Linear MCP
+                        </h1>
+                        <p class="text-[#696C73]  text-[15px] max-w-[300px] mt-2">
+                            Connect Linear to your favorite tools including Cursor, Claude, ChatGPT, and more.
+                        </p>
+                    </div>
+                    <img src="../public/linear-mcp.png" alt="">
+                </div>
+                <div class="img w-full h-auto border-t-1 border-l-1  border-b-1 border-[#151616]  py-3 px-3 p-2">
+                    <div class="text mt-3  h-[120px] p-4 mb-3">
+                        <h1 class="font-semibold text-2xl ">
+                            AI natively built in
+                        </h1>
+                        <p class="text-[#696C73]  text-[15px] max-w-[300px] mt-2">
+                            Linear uses the latest language models to power workflows from semantic search to summarizing your team’s project updates.
+                        </p>
+                    </div>
+                    <img src="../public/ai-natively.png" alt="" class="mb-2">
+                </div>
+        </div>
+    </section>
+    
+    <!-- collaborate across -->
+     <section class="page_workflows max-w-[950px] h-auto mx-auto p-10 mt-20 text-white">
+        <div class="text-content">
+            <div class="btn ">
+                <button class="flex items-center gap-2">
+                    <span class="bg-[#b59aff] inline-block h-2 w-2 rounded-full px-2"></span>
+                    Workflows and integrations
+                </button>
+            </div>
+            <div class="text-content grid  grid-cols-2 w-full">
+                <div>
+                    <h1 class=" text-[3rem] p-3 leading-tight">
+                        Collaborate across tools and teams
+                    </h1>
+                </div>
+                <div class="p-3 text-[#747d82] mt-3">
                     <p>
-                        Design to move fast 
+                        Expand the capabilities of the Linear system with a wide variety of integrations that keep everyone in your organization aligned and focused.
                     </p>
                 </div>
             </div>
-            <div class=" rounded-3xl  p-3 bg-[#141516] hover:bg-[#17191c] transition cursor-pointer">
-                <div class="image object-contain">
-                    <img src="../public//card-03.png" alt="">
+        </div>
+     </section>
+
+     <!-- Colloborate cardss -->
+     <section class="w-full h-[400px] p-10">
+        <div class="grid grid-cols-7 gap-3 overflow-x-auto">
+            
+            <div class="border border-[#7d858a] p-2 rounded-2xl hover:bg-[#0f1011] transition cursor-pointer">
+                <div class="img">
+                    <img src="../public/co-card-01.png" alt="">
                 </div>
-                <div class="card-text text-2xl mt-2">
-                    <p>
-                        Crafted to perfection
+                <div class="text-[#7d858a] my-5 ">
+                    <h1 class="text-[13px]">Customer Requests</h1>
+                    <p class="text-white font-semibold text-[14px]">
+                        Build what customers actually want 
                     </p>
                 </div>
-            </div> -->
+            </div>
+            
+            <div class="border border-[#7d858a] p-2 rounded-2xl hover:bg-[#0f1011] transition cursor-pointer">
+                <div class="img">
+                    <img src="../public/co-card-02.png" alt="">
+                </div>
+                <div class="text-[#7d858a] my-5 ">
+                    <h1 class="text-[13px]">Powerful git workflows</h1>
+                    <p class="text-white font-semibold text-[14px]">
+                        Automate pull requests and commit workflows
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border border-[#7d858a] p-2 rounded-2xl hover:bg-[#0f1011] transition cursor-pointer">
+                <div class="img">
+                    <img src="../public/co-card-03.png" alt="">
+                </div>
+                <div class="text-[#7d858a] my-5 ">
+                    <h1 class="text-[13px]">Linear mobile</h1>
+                    <p class="text-white font-semibold text-[14px]">
+                        Move product work forward from anywhere
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border border-[#7d858a] p-2 rounded-2xl hover:bg-[#0f1011] transition cursor-pointer">
+                <div class="img">
+                    <img src="../public/co-card-04.png" alt="">
+                </div>
+                <div class="text-[#7d858a] my-5 ">
+                    <h1 class="text-[13px]">Linear asks</h1>
+                    <p class="text-white font-semibold text-[14px]">
+                        Turn workplace requests into actionable issues
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border border-[#7d858a] p-2 rounded-2xl hover:bg-[#0f1011] transition cursor-pointer">
+                <div class="img">
+                    <img src="../public/co-card-05.png" alt="">
+                </div>
+                <div class="text-[#7d858a] my-5 ">
+                    <h1 class="text-[13px]">Linear integrations</h1>
+                    <p class="text-white font-semibold text-[14px]">
+                        100+ ways to enhance your Linear experience
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border border-[#7d858a] p-2 rounded-2xl hover:bg-[#0f1011] transition cursor-pointer">
+                <div class="img">
+                    <img src="../public/co-card-06.png" alt="">
+                </div>
+                <div class="text-[#7d858a] my-5 ">
+                    <h1 class="text-[13px]">Figma integration</h1>
+                    <p class="text-white font-semibold text-[14px]">
+                        Bridge the gap between engineering and design
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border border-[#7d858a] p-2 rounded-2xl hover:bg-[#0f1011] transition cursor-pointer">
+                <div class="img">
+                    <img src="../public/co-card-07.png" alt="">
+                </div>
+                <div class="text-[#7d858a] my-5 ">
+                    <h1 class="text-[13px]">Built for developers</h1>
+                    <p class="text-white font-semibold text-[14px]">
+                        Build your own addons with the Linear API
+                    </p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <hr class="text-[#252323]"/>
+    
+    <!-- foundation section  -->
+    <section class="mt-11 p-5">
+        <div class=" grid grid-cols-2">
+            <div class=" flex p-5 pl-[300px] flex-col">
+            
+                 <div class="text-content max-w-[300px] ">
+                    <div class="btn ">
+                        <button class="flex items-center gap-2">
+                            <span class="bg-[#000000] inline-block h-2 w-2 rounded-full border px-2"></span>
+                            Under the hood
+                        </button>
+                    </div>
+                    <div class="heading">
+                        <h1 class="text-white text-[40px] font-semibold leading-tight">
+                            Built on strong foundations
+                        </h1>
+                    </div>
+                    <div class="paragraph max-w-[400px] text-[15px]py-5">
+                        <p class="inline text-[#696C73] font-semibold">
+                            Linear is so simple to use, it’s easy to overlook the wealth of complex technologies packed under the hood that keep Linear robust, safe, and blazing fast.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 mt-4 border-t border-gray-600 py-3">
+                    <div class="left">
+                        <h1 class="text-white font-semibold">
+                            Linear Sync Engine
+                        </h1>
+                    </div>
+                    <div class="right">
+                        <p class="text-[#7D858A]">
+                            Built with a high-performance architecture and an obsessive focus on speed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 mt-4 py-3">
+                    <div class="left">
+                        <h1 class="text-white font-semibold">
+                            Enterprise-ready security
+                        </h1>
+                    </div>
+                    <div class="right">
+                        <p class="text-[#7D858A]">
+                            Best-in-class security practices keep your work safe and secure at every layer.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 mt-4 py-3">
+                    <div class="left">
+                        <h1 class="text-white font-semibold">
+                            Engineered for scale
+                        </h1>
+                    </div>
+                    <div class="right">
+                        <p class="text-[#7D858A]">
+                            Built for teams of all sizes. From early-stage startups to global enterprises.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 mt-4 py-3">
+                    <div>
+                        <img src="../public/mini-logo-01.png" alt="">
+                    </div>
+                    <div class="mt-2">
+                        <img src="../public/mini-logo-02.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../public/mini-logo-03.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div >
+                <img src="../public/fourth-bg.png" alt="">
+            </div>
+        </div>
+
+        
+    </section>
+    
+    <!-- pre-footer  -->
+    <section class="prefooter max-w-[950px] h-auto mx-auto p-10 mt-10 text-white flex gap-20">
+        <div class="left">
+            <h1 class="text-[30px] font-bold">
+                Plan the present. Build the future.
+            </h1>
+        </div>
+        <div class="right ">
+            <button class="px-3 py-2 border bg-[#28282c] rounded-[8px] hover:bg-[#45454a] transition cursor-pointer">Content sales</button>
+            <button class="px-3 py-2 bg-[#e6e6e6]  text-[#28282c] rounded-[8px] hover:bg-white transition cursor-pointer">Get started</button>
         </div>
     </section>
+
+     <hr class="text-[#252323]"/>
+
+     <footer class="h-auto max-w-[950px] mx-auto mt-8 mb-3">
+        <div class="grid grid-cols-6">
+            <div class=" p-3 h-auto w-full">
+                <div class="h-auto w-[30px]">
+                    <img src="../public/linear-app-icon.png" alt="" class="object-contain">
+                </div>
+            </div>
+            <div class=" py-5 flex flex-col items-start gap-1">
+                <h1 class="font-semibold text-[15px]">Fetures</h1>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px] mt-6">Plan</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Build</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">insights</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Customer Requests</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Linear Asks</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Security</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Mobile</button>
+            </div>
+
+            <div class=" py-5 flex flex-col items-start gap-1">
+                <h1 class="font-semibold text-[15px]">Product</h1>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px] mt-6">Pricing</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Method</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Integrations</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Changelog</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Documentation</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Download</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Switch</button>
+            </div>
+
+            <div class=" py-5 flex flex-col items-start gap-1">
+                <h1 class="font-semibold text-[15px]">Company</h1>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px] mt-6">About</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Customers</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Careers</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Now</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">README</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Quality</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Brand</button>
+            </div>
+
+            <div class=" py-5 flex flex-col items-start gap-1">
+                <h1 class="font-semibold text-[15px]">Resources</h1>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px] mt-6">Developers</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Status</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Startups</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Report vulnerability</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">DPA</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Privacy</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Terms</button>
+            </div>
+
+            <div class=" py-5 flex flex-col items-start gap-1">
+                <h1 class="font-semibold text-[15px]">Connect</h1>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px] mt-6">Contact us</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Community</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">X (Twitter)</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">GitHub</button>
+                <button class="text-[#505257] hover:text-white cursor-pointer transition text-[13px]">Youtube</button>
+            </div>
+        </div>
+     </footer>
 </body>
 </html>
